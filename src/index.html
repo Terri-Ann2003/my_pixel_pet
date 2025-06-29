@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="UTF-8" />
-    <title>Hello World!</title>
+    <title>My Desktop Pet</title>
     <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <h1>💖 Hello World!</h1>
-    <p>Welcome to your Electron application.</p>
-  </body>
+</head>
+<body>
+
+  <div id="app-window">
+
+    <div id="content-area">
+      <div id="stat-display">
+        <span id="hunger-stat">Hunger: 100</span>
+        <span id="happiness-stat">Happy: 100</span>
+      </div>
+      <img src="./assets/bunny.png" id="bunny" alt="A pixel art bunny">
+    </div>
+
+    <div id="nav-left" class="nav-arrow"><</div>
+    <div id="nav-right" class="nav-arrow">></div>
+
+    <div id="control-panel">
+      <button id="feed-button">Feed</button>
+      <button id="play-button">Play</button>
+      <button id="clean-button">Clean</button>
+    </div>
+
+  </div>
+  
+  <script src="./index.js" defer></script>
+</body>
 </html>
